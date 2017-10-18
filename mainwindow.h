@@ -20,6 +20,10 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_pushButton_Browse_clicked();
+
+    void on_pushButton_EncryptDecrypt_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
