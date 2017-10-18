@@ -12,3 +12,10 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    QFileDialog *fileDialog=new QFileDialog(this);
+    fileDialog->acceptMode(QFileDialog::AcceptOpen);
+    fileDialog->fileMode(QFileDialog::AnyFile);
+}
