@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include <QDebug>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -15,7 +15,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    QFileDialog *fileDialog=new QFileDialog(this);
-    fileDialog->acceptMode(QFileDialog::AcceptOpen);
-    fileDialog->fileMode(QFileDialog::AnyFile);
+    QString filename = QFileDialog::getOpenFileName(this,"Select File","C:/","All files(*.*)");
+    QMessageBox::information(this,"Selected file",filename,QMessageBox::Ok);
 }
