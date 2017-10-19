@@ -63,7 +63,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_username">
+       <widget class="QLineEdit" name="lineEdit_filename">
         <property name="placeholderText">
          <string>Select File</string>
         </property>
@@ -112,7 +112,7 @@
       <item>
        <widget class="QLineEdit" name="lineEdit_password">
         <property name="echoMode">
-         <enum>QLineEdit::PasswordEchoOnEdit</enum>
+         <enum>QLineEdit::Password</enum>
         </property>
         <property name="readOnly">
          <bool>false</bool>
@@ -133,6 +133,9 @@
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_EncryptDecrypt">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="font">
        <font>
         <family>MS Shell Dlg 2</family>
@@ -145,6 +148,24 @@
        <string>SELECT FILE FIRST</string>
       </property>
      </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_status">
+        <property name="text">
+         <string>Status: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QProgressBar" name="progressBar_status">
+        <property name="value">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>

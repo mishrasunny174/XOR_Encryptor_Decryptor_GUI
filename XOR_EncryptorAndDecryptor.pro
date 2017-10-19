@@ -26,15 +26,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    encryptor.cpp \
-    progress.cpp
+    encryptor.cpp
 
 HEADERS += \
         mainwindow.h \
     encryptor.h \
-    myexep.h \
-    progress.h
+    myexep.h
 
 FORMS += \
-        mainwindow.ui \
-    progress.ui
+        mainwindow.ui
+
+CONFIG+= static
