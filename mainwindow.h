@@ -4,6 +4,11 @@
 #include <QMainWindow>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QDebug>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include "encryptor.h"
 
 namespace Ui {
 class MainWindow;

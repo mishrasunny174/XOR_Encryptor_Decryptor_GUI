@@ -7,8 +7,8 @@ class myExep:public std::exception
 public:
     virtual const char* what()
     {
-        return "File Error Has Occurred";
+        return "unable to open file";
     }
-}excep;
+};
 
 #endif // MYEXEP_H
