@@ -24,7 +24,6 @@ public:
 
 private slots:
     void on_pushButton_Browse_clicked();
-
     void on_pushButton_EncryptDecrypt_clicked();
 
 private:

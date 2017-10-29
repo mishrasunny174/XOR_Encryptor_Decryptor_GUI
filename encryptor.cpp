@@ -16,7 +16,7 @@ void Encryptor::encrypt(QProgressBar* progressBar,std::string fileName,std::stri
 {
     std::ifstream iFile;
     std::ofstream oFile;
-    std::string outFileName=fileName+".xre";
+    std::string outFileName=fileName+".crypted";
     int i=0;
     char temp;
     char *charptr=&temp;
@@ -48,7 +48,7 @@ void Encryptor::decrypt(QProgressBar* progressBar,std::string fileName,std::stri
     std::ifstream iFile;
     std::ofstream oFile;
     std::string outFileName;
-    outFileName=fileName.substr(0,fileName.length()-4);
+    outFileName=fileName.substr(0,fileName.length()-8);
     int i=0;
     char temp;
     char *charptr=&temp;
