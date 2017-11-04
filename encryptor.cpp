@@ -38,7 +38,7 @@ void Encryptor::encrypt(QProgressBar* progressBar,std::string fileName,std::stri
     }
     catch(std::exception* ex)
     {
-        QMessageBox::warning(nullptr,"ERROR","Unable to open file make sure it exists!",QMessageBox::Ok);
+        QMessageBox::warning(nullptr,"ERROR",ex->what(),QMessageBox::Ok);
         return;
     }
 }
@@ -70,7 +70,7 @@ void Encryptor::decrypt(QProgressBar* progressBar,std::string fileName,std::stri
     }
     catch(std::exception* ex)
     {
-        QMessageBox::warning(nullptr,"ERROR","Unable to open file make sure it exists!",QMessageBox::Ok);
+        QMessageBox::warning(nullptr,"ERROR",ex->what(),QMessageBox::Ok);
         return;
     }
 }

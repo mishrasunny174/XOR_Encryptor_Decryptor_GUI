@@ -13,7 +13,7 @@ class Encryptor
 {
     int getProgress(filePosition ,filePosition); //it will display progress bar
     filePosition getFileSize(std::string); //to get the complete file size to calculate progress
-    myExep* excep = new myExep; //exception if file doesn't opens
+    myExep excep; //exception if file doesn't opens
 public:
     void encrypt(QProgressBar*,std::string,std::string);
     void decrypt(QProgressBar*,std::string,std::string);

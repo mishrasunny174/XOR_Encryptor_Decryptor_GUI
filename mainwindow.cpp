@@ -21,7 +21,7 @@ void MainWindow::on_pushButton_Browse_clicked()
 {
     QString filename = QFileDialog::getOpenFileName(this,"Select File","/","All files(*.*)"); //getting filename
     ui->lineEdit_filename->setText(filename);
-    if(filename.contains(".xre"))
+    if(filename.contains(".crypted"))
         ui->pushButton_EncryptDecrypt->setText("Decrypt");
     else
         ui->pushButton_EncryptDecrypt->setText("Encrypt");
